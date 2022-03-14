@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Lipas</string>
+    <string name="membantu">Lipas akan membantu anda menyelesaikan masalah sampah.</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="buat">Buat Akun</string>
+    <string name="masuk">Selamat</string>
+    <string name="masuk1">Datang</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="pasword">Password</string>
+    <string name="nomer">No Hp</string>
+    <string name="judul_nama">HI, Nama</string>
+    <string name="point">Point Reward</string>
+    <string name="jml_point">890</string>
+    <string name="pkt">Paket</string>
+    <string name="biasa">Reguler</string>
+    <string name="elite">Premium</string>
+    <string name="jenis">Jenis Sampah</string>
+    <string name="organi">Organik</string>
+    <string name="anorgan">Anorganik</string>
+    <string name="kresek">Plastik</string>
+    <string name="kerts">Kertas</string>
+    <string name="btl">Botol</string>
+    <string name="edukasi">Popular TPS</string>
+    <string name="sudahtau">TPS Yogyakarta</string>
+    <string name="caramilah">Temukan TPS terdekat anda!</string>
+    <string name="btn_lengkap">Selengkapnya</string>
+    <string name="layanan1">REGULER</string>
+    <string name="layanan2">PREMIUM</string>
+    <string name="ambil">Pengambilan</string>
+    <string name="sekali">2 Kali/Minggu</string>
+    <string name="duakali">3 Kali/Minggu</string>
+    <string name="hari">Hari</string>
+    <string name="rabu">Rabu dan Jumat</string>
+    <string name="rabusabtu">Senin, Kamis &amp; Minggu</string>
+    <string name="sampai">Berlaku</string>
+    <string name="mount">1 Bulan</string>
+    <string name="note">Note: Jika sampah melebihi kapasitas maka akan ada harga tambahan</string>
+    <string name="fee">Harga</string>
+    <string name="nominal">Rp 30.000</string>
+    <string name="nominal2">Rp 50.000</string>
+    <string name="infobtl">Sampah Botol</string>
+    <string name="ket">Deskripsi</string>
+    <string name="masehInfo">Botol plastik lebih lama diurai oleh alam,
+        dan menjadi bagian dari masalah pencemaran lingkungan yang kini makin parah saja terjadi.
+        Mengurangi pemakaian botol plastik akan jauh lebih aman dan sehat.</string>
+    <string name="dna">Dana</string>
+    <string name="ov">Ovo</string>
+    <string name="bank">M-Bank</string>
+    <string name="jumlah">Jumlah yang harus dibayarkan</string>
+    <string name="konfirmasibyr">Konfirmasi Bayar</string>
+    <string name="lns">Lunas</string>
+    <string name="byr">Pembayaran</string>
+    <string name="pktt">Paket</string>
+    <string name="up_tempat">Upload Tempat Sampah</string>
+    <string name="data">File</string>
+    <string name="btn_cek">Cek TPS</string>
+    <string name="find">Temukan TPS Favorit</string>
+    <string name="ttps">TPS</string>
+    <string name="packet">Paket</string>
+    <string name="trash">Sampah</string>
+    <string name="metode">Metode Pembayaran</string>
+    <string name="danaa">Dana</string>
+    <string name="ovvo">Ovo</string>
+    <string name="masterC">Master Card</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="rinciann">Rincian Pembayaran</string>
+    <string name="usepoint">Gunakan Point</string>
+    <string name="seluruhan">Total</string>
+    <string name="btnn_bayarr">Bayar</string>
+    <string name="berhasil">Pembayaran Berhasil</string>
+    <string name="succeds">Your payment has been procesed</string>
+
+    <string name="datadesk">Botol plastik lebih lama diurai oleh alam,
+        dan menjadi bagian dari masalah pencemaran lingkungan yang kini makin parah saja terjadi.
+        Mengurangi pemakaian botol plastik akan jauh lebih aman dan sehat.</string>
+
+
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string-array name="catatan">
+        <item>Apabila sampah ada tambahan maka akan dikenai biaya lagi</item>
+
+    </string-array>
+</resources>

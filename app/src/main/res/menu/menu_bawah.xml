@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/beranda"
+        android:icon="@drawable/itm_home"
+        android:enabled="true"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/notif"
+        android:icon="@drawable/itm_note"
+        android:title="Notifikasi"/>
+
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/itm_history"
+        android:title="History"/>
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/itm_person"
+        android:visible="true"
+        android:title="Profil"/>
+
+
+
+</menu>

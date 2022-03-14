@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- layout header -->
+    <RelativeLayout
+        android:id="@+id/layout_headerHis_sampah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_hijau_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="27dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_sampah"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:id="@+id/toll_kembali_sampah"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_arrow_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_paket_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="History"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/toll_kembali_sampah"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/notifikasi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_groundHis_sampah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="#F2F2F2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/horizon_header"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- layout pilihan pembayaran -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/layout_header_historyPilih">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="135dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/kotak_bayar"
+                    android:layout_marginStart="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/radius">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/byr"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/kotak_bayar"
+                        app:layout_constraintStart_toStartOf="@id/kotak_bayar"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="135dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/kotak_paket_histo"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius"
+                    android:backgroundTint="#569F50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/kotak_bayar"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trash"
+                        android:textStyle="normal"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@id/kotak_paket_histo"
+                        app:layout_constraintEnd_toEndOf="@id/kotak_paket_histo"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/horizon_header"
+            android:background="#F3F3F3"
+            android:layout_marginTop="73dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!-- info 1 -->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="370dp"
+                    android:layout_height="119dp"
+                    android:id="@+id/kotak_his_pembayaran1"
+                    android:layout_marginTop="23dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/bg_history_item">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="59dp"
+                        android:layout_height="58dp"
+                        android:id="@+id/kotak_img_his"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/bg_nostroke"
+                        android:backgroundTint="#FFA07A">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/ic_credit_card"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_height="27dp"
+                        android:id="@+id/tv_nPaket_his"
+                        app:layout_constraintStart_toEndOf="@id/kotak_img_his"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Sampah telah diambil"
+                        android:textSize="20sp"
+                        android:textColor="#323030"/>
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="23dp"
+                        android:id="@+id/tv_id_tgl"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nPaket_his"
+                        app:layout_constraintStart_toStartOf="@id/tv_nPaket_his"
+                        android:text="5 Juli 2022"
+                        android:textSize="19sp"
+                        android:textColor="#323030"
+                        android:layout_marginTop="7dp"/>
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- info 2 -->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="370dp"
+                    android:layout_height="119dp"
+                    android:id="@+id/kotak_his_pembayaran2"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/kotak_his_pembayaran1"
+                    android:background="@drawable/bg_history_item">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="59dp"
+                        android:layout_height="58dp"
+                        android:id="@+id/kotak_img2_his"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/bg_nostroke"
+                        android:backgroundTint="#FFA07A">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/ic_credit_card"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="126dp"
+                        android:layout_height="27dp"
+                        android:id="@+id/tv_nPaket2_his"
+                        app:layout_constraintStart_toEndOf="@id/kotak_img2_his"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Paket Reguler"
+                        android:textSize="20sp"
+                        android:textColor="#323030"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_date2"
+                        app:layout_constraintStart_toEndOf="@id/kotak_img2_his"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nPaket2_his"
+                        android:text="Date"
+                        android:textSize="17sp"
+                        android:textColor="#959F9B"
+                        app:layout_constraintStart_toStartOf="@id/tv_nPaket2_his"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="23dp"
+                        android:id="@+id/tv_id_tgl2"
+                        app:layout_constraintStart_toEndOf="@id/kotak_img2_his"
+                        app:layout_constraintTop_toBottomOf="@id/tv_date2"
+                        app:layout_constraintStart_toStartOf="@id/tv_date2"
+                        android:text="1 Juni 2022"
+                        android:textSize="19sp"
+                        android:textColor="#323030"
+                        android:layout_marginTop="7dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_time2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_date2"
+                        android:text="Time"
+                        android:textSize="17sp"
+                        android:textColor="#959F9B"
+                        android:layout_marginEnd="35dp"/>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="23dp"
+                        android:id="@+id/tv_id_waktu2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_time2"
+                        android:text="10.30 am"
+                        android:textSize="19sp"
+                        android:textColor="#323030"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="8dp"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- BOTTOM NAVIGASI -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:foregroundGravity="bottom"
+        android:background="@drawable/bg_check_ic_profil"
+        app:menu="@menu/menu_bawah"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_fragment"
+        app:layout_constraintBottom_toBottomOf="@id/footer"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

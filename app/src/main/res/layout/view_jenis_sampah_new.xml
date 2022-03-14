@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- layout header -->
+    <RelativeLayout
+        android:id="@+id/layout_header_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_hijau_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="27dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_jeniss"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:id="@+id/toll_kembali_jenis"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_arrow_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_paket_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:text="@string/jenis"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/toll_kembali_jenis"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/notifikasi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_groundHis_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="#F2F2F2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="365dp"
+            android:layout_height="655dp"
+            android:id="@+id/layout_2_jeniss"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_nostroke"
+            android:backgroundTint="#F1F4EF">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="195dp"
+                android:layout_height="205dp"
+                android:id="@+id/kotak_data_image_jenis"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_nostroke"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_jeniss"
+                    android:layout_width="185dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/ic_plastik"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/tv_jenis_sampah"
+                    app:layout_constraintTop_toBottomOf="@id/image_jeniss"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="7dp"
+                    android:paddingStart="10dp"
+                    android:text="Sampah Botol"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#569F50"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:id="@+id/horizon_deskdll"
+                app:layout_constraintTop_toBottomOf="@id/kotak_data_image_jenis"
+                android:layout_marginTop="28dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_desk_jenis"
+                            android:text="Tentang"
+                            android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginStart="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textColor="#569F50"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_manfaat_jenis"
+                            app:layout_constraintStart_toEndOf="@id/tv_desk_jenis"
+                            android:text="Manfaat"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toTopOf="@id/tv_desk_jenis"
+                            android:layout_marginStart="15dp"
+                            android:textColor="#333333"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_bebas_jenis"
+                            app:layout_constraintStart_toEndOf="@id/tv_manfaat_jenis"
+                            android:text="Bisnis"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toTopOf="@id/tv_manfaat_jenis"
+                            android:layout_marginStart="15dp"
+                            android:textColor="#333333"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_judul_desk"
+                        app:layout_constraintTop_toBottomOf="@id/tv_desk_jenis"
+                        android:layout_marginTop="20dp"
+                        android:text="Deskripsi"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/tv_desk_jenis"
+                        android:textColor="#000000"/>
+
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_data_desk"
+                        app:layout_constraintTop_toBottomOf="@id/tv_judul_desk"
+                        app:layout_constraintStart_toStartOf="@id/tv_judul_desk"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/datadesk"
+                        android:textSize="17sp"
+                        android:textColor="#959F9B"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sampah_lain"
+                app:layout_constraintTop_toBottomOf="@id/horizon_deskdll"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:text="Sampah Lainnya"
+                android:textSize="21sp"
+                android:textColor="#000000"/>
+
+            
+            
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_sampah_lain"
+                android:layout_marginTop="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/kotak_sampah1_jenis"
+                        android:layout_width="92dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_nostroke"
+                        android:backgroundTint="#EDEDED"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="78dp"
+                            android:layout_height="53dp"
+                            android:id="@+id/image_1_jenis"
+                            android:src="@drawable/icon_kertas"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/image_1_jenis"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="5dp"
+                            android:text="Kertas"
+                            android:textSize="18sp"
+                            android:textColor="#060606"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/kotak_sampah2_jenis"
+                        android:layout_width="92dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/bg_nostroke"
+                        android:backgroundTint="#EDEDED"
+                        app:layout_constraintStart_toEndOf="@id/kotak_sampah1_jenis"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="78dp"
+                            android:layout_height="53dp"
+                            android:id="@+id/image_2_jenis"
+                            android:src="@drawable/icon_kertas"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/image_2_jenis"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="5dp"
+                            android:text="Kertas"
+                            android:textSize="18sp"
+                            android:textColor="#060606"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/kotak_sampah3_jenis"
+                        android:layout_width="92dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/bg_nostroke"
+                        android:backgroundTint="#EDEDED"
+                        app:layout_constraintStart_toEndOf="@id/kotak_sampah2_jenis"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="78dp"
+                            android:layout_height="53dp"
+                            android:id="@+id/image_3_jenis"
+                            android:src="@drawable/icon_kertas"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/image_3_jenis"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="5dp"
+                            android:text="Kertas"
+                            android:textSize="18sp"
+                            android:textColor="#060606"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/kotak_sampah4_jenis"
+                        android:layout_width="92dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/bg_nostroke"
+                        android:backgroundTint="#EDEDED"
+                        app:layout_constraintStart_toEndOf="@id/kotak_sampah3_jenis"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:layout_width="78dp"
+                            android:layout_height="53dp"
+                            android:id="@+id/image_4_jenis"
+                            android:src="@drawable/icon_kertas"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/image_4_jenis"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="5dp"
+                            android:text="Kertas"
+                            android:textSize="18sp"
+                            android:textColor="#060606"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            </HorizontalScrollView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

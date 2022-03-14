@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- layout header -->
+    <RelativeLayout
+        android:id="@+id/layout_header_profil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_hijau_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- penggunaan toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="27dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:id="@+id/toll_kembali_profil"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_arrow_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/tv_paket_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="Edit Profil"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/toll_kembali_profil"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/notifikasi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+    <!-- layout reguler -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_tengah_pembayaran"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_layanan"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:id="@+id/kotak_img_edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="97dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/profil_dash"/>
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:id="@+id/img_plus_ubah_profil"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_plus"
+                android:background="#569F50"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ed_nama"
+            app:layout_constraintTop_toBottomOf="@id/kotak_img_edit"
+            android:text="@string/nama"
+            android:textSize="21sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#323030"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="27dp"
+            android:id="@+id/ed_nama_profil"
+            app:layout_constraintTop_toBottomOf="@id/tv_ed_nama"
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="@id/tv_ed_nama"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ed_mail"
+            app:layout_constraintTop_toBottomOf="@id/ed_nama_profil"
+            app:layout_constraintStart_toStartOf="@id/ed_nama_profil"
+            android:text="@string/email"
+            android:textSize="21sp"
+            android:textColor="#323030"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="27dp"
+            android:id="@+id/ed_mail_profil"
+            app:layout_constraintTop_toBottomOf="@id/tv_ed_mail"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@id/tv_ed_mail"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ed_nomer"
+            app:layout_constraintTop_toBottomOf="@id/ed_mail_profil"
+            app:layout_constraintStart_toStartOf="@id/ed_mail_profil"
+            android:text="@string/nomer"
+            android:textSize="21sp"
+            android:textColor="#323030"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="27dp"
+            android:id="@+id/ed_nomer_profil"
+            app:layout_constraintTop_toBottomOf="@id/tv_ed_nomer"
+            android:layout_marginTop="15dp"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="@id/tv_ed_nomer"/>
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="47dp"
+            android:id="@+id/btn_simpan_profil"
+            app:layout_constraintTop_toBottomOf="@id/ed_nomer_profil"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_nostroke"
+            android:backgroundTint="#569F50"
+            android:text="Simpan"
+            android:textSize="21sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- BOTTOM NAVIGASI -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:foregroundGravity="bottom"
+        android:background="@drawable/bg_check_ic_profil"
+        app:menu="@menu/menu_bawah"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_fragment"
+        app:layout_constraintBottom_toBottomOf="@id/footer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
